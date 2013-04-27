@@ -82,7 +82,7 @@ find_package(Boost)
 if(NOT Boost_FOUND)
     message(FATAL_ERROR "Boost required to build " ${CMAKE_PROJECT_NAME})
 endif()
-SET(BOOST_REQUIRED_COMPONENTS thread)
+SET(BOOST_REQUIRED_COMPONENTS system thread)
 ADD_DEFINITIONS(-DBOOST_ALL_DYN_LINK)
 
 ########################################################################
